@@ -11,8 +11,8 @@ const localBusinessSchema = {
   "@type": ["FoodEstablishment", "LocalBusiness"],
   name: "Jon Folse Food Truck",
   url: "https://jon-folse-food-truck.jon-folse-tech.chatgpt.site",
-  image: "https://jon-folse-food-truck.jon-folse-tech.chatgpt.site/jon-folse-brand.png",
-  logo: "https://jon-folse-food-truck.jon-folse-tech.chatgpt.site/jon-folse-brand.png",
+  image: "https://jon-folse-food-truck.jon-folse-tech.chatgpt.site/jonfolsefoodtrucklogo.png",
+  logo: "https://jon-folse-food-truck.jon-folse-tech.chatgpt.site/jonfolsefoodtrucklogo.png",
   description: "Louisiana food truck and catering serving Gonzales, Baton Rouge, New Orleans, and communities across South Louisiana.",
   servesCuisine: ["Louisiana", "Cajun", "Creole", "Southern"],
   priceRange: "Prices vary by menu and event",
@@ -55,7 +55,7 @@ export default function Home() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
     <a className="skip-link" href="#main-content">Skip to content</a>
     <header className="site-header">
-      <a className="mini-brand" href="#top" aria-label="Jon Folse Food Truck home"><span className="mini-mark"><Image src="/jon-folse-brand.png" alt="" width={42} height={42} /></span><span>Jon Folse<small>Food Truck</small></span></a>
+      <a className="mini-brand" href="#top" aria-label="Jon Folse Food Truck home"><span className="mini-mark"><Image src="/jonfolsefoodtrucklogo.png" alt="" width={72} height={72} /></span><span>Jon Folse<small>Food Truck</small></span></a>
       <nav className="desktop-nav" aria-label="Primary navigation"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#catering">Catering</a><a href="#find-us">Find us</a></nav>
       <a className="button button-small" href="#contact">Book the truck</a>
       <details className="mobile-nav"><summary aria-label="Open navigation">Menu</summary><nav aria-label="Mobile navigation"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#catering">Catering</a><a href="#find-us">Find us</a><a href="#contact">Book the truck</a></nav></details>
@@ -65,7 +65,7 @@ export default function Home() {
       <div className="hero-art" aria-hidden="true"><div className="sun" /><div className="skyline"><span /><span /><span /><span /><span /></div><div className="river"><i /><i /><i /></div></div>
       <div className="hero-content" id="main-content">
         <p className="eyebrow light">Gonzales · Baton Rouge · New Orleans · South Louisiana</p>
-        <div className="brand-seal"><Image className="brand-art" src="/jon-folse-brand.png" alt="Jon Folse Food Truck — rooted in Louisiana, cooked with heritage" width={1256} height={1256} priority /></div>
+        <div className="brand-seal"><Image className="brand-art" src="/jonfolsefoodtrucklogo.png" alt="Jon Folse Food Truck — rooted in Louisiana, cooked with heritage" width={1256} height={1256} priority /></div>
         <h1>Good food has a way<br />of bringing folks together.</h1>
         <p className="hero-copy">Deep Louisiana flavor, generous portions, and warm food truck catering from Gonzales and Baton Rouge to New Orleans and communities across South Louisiana.</p>
         <div className="hero-actions"><a className="button" href="#menu">Explore the menu</a><a className="text-link" href="#find-us">See where we’re rolling <span aria-hidden="true">→</span></a></div>

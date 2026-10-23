@@ -22,5 +22,8 @@ test("renders the branded homepage", async () => {
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /FoodEstablishment/);
   assert.match(html, /rel="canonical"/);
+  assert.match(html, /name="viewport" content="width=device-width, initial-scale=1"/);
+  assert.match(html, /class="mobile-nav"/);
+  assert.match(html, /aria-label="Open navigation"/);
   assert.doesNotMatch(html, /codex-preview/);
 });

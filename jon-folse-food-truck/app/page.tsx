@@ -80,6 +80,22 @@ export default function Home() {
       <p className="menu-note">Ask about vegetarian options and current allergen information when ordering.</p>
     </section>
 
+    <section className="seasoning-section" id="seasoning">
+      <div className="seasoning-image-wrap">
+        <Image src="/just-right-cajun-seasoning.png" alt="Jon Folse Signature Cajun Seasoning in a navy and antique-gold Louisiana heritage shaker jar" width={1024} height={1536} className="seasoning-product-image" />
+        <span className="seasoning-image-caption">A little Louisiana in every shake</span>
+      </div>
+      <div className="seasoning-copy">
+        <p className="eyebrow">From our Louisiana kitchen</p>
+        <p className="seasoning-coming">Coming soon</p>
+        <h2>Jon Folse<br /><em>Just Right</em><br />Cajun Seasoning</h2>
+        <div className="flourish"><i /><b>✦</b><i /></div>
+        <p className="seasoning-tagline">“Bring a little bayou to every bite.”</p>
+        <p>Bold Louisiana flavor, balanced just right. A signature all-purpose seasoning inspired by the flavors we grew up loving—made for weeknight suppers, backyard cookouts, and everything worth gathering around.</p>
+        <span className="seasoning-badge">Louisiana heritage · Big flavor · Coming soon</span>
+      </div>
+    </section>
+
     <section className="story-section" id="story">
       <div className="story-image"><div className="story-frame"><span className="story-fleur" aria-hidden="true">⚜</span><p>Louisiana<br /><strong>heritage</strong><br />on wheels</p></div><div className="story-stamp">Made with<br />Louisiana soul</div></div>
       <div className="story-copy"><p className="eyebrow light">Our story</p><h2>Where the river runs deep, so do the flavors.</h2><Flourish /><p>Jon Folse Food Truck is a celebration of Louisiana’s table—where French, African, Spanish, Native American, and Caribbean influences have met for generations.</p><p>We carry that spirit forward with slow-built flavor, familiar hospitality, and food made to be shared. No pretense. No shortcuts. Just a good meal and a place for everybody to pull up a chair.</p><div className="signature">Jon Folse <span>Food Truck</span></div></div>

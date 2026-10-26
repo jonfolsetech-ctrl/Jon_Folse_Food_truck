@@ -35,3 +35,83 @@
 .seasoning-tagline{font-size:clamp(1.3rem,2.5vw,2rem);font-style:italic;color:var(--gold2)!important;line-height:1.35!important}
 .seasoning-badge{display:inline-block;margin-top:1rem;padding:.8rem 1rem;border-left:2px solid var(--gold);background:#ffffff08;color:var(--cream);font:700 .6rem Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:760px){.seasoning-section{grid-template-columns:1fr;gap:2.5rem;padding:4.5rem 1.5rem}.seasoning-image-wrap{max-width:360px}.seasoning-copy{text-align:center}.seasoning-copy .flourish{justify-content:center}.seasoning-copy h2{font-size:clamp(2.8rem,13vw,4.5rem)}.seasoning-copy>p:not(.eyebrow):not(.seasoning-coming){margin-left:auto;margin-right:auto}}
+
+
+/* Mobile alignment and overflow safeguards */
+@media(max-width:900px){
+  html,body{max-width:100%;overflow-x:clip}
+  .site-header{padding-inline:clamp(1rem,5vw,1.5rem);gap:.75rem}
+  .mini-brand{min-width:0;gap:.55rem;font-size:.9rem;letter-spacing:.08em}
+  .mini-brand>span:last-child{white-space:nowrap}
+  .hero{min-height:0;height:auto;min-height:100svh;max-height:none;padding:7.5rem 1.25rem 5rem}
+  .hero-content{width:100%;max-width:700px}
+  .hero .eyebrow{max-width:34rem;margin-inline:auto;line-height:1.65}
+  .brand-seal{width:min(360px,70vw);margin:.25rem auto .75rem}
+  .hero h1{font-size:clamp(2.25rem,7vw,3.6rem);line-height:1.04;margin:1rem 0}
+  .hero-copy{max-width:36rem}
+  .menu-grid,.menu-card,.story-section,.story-copy,.catering-section,.catering-copy,
+  .schedule-wrap,.schedule-card,.location-card,.seasoning-section,.seasoning-copy,
+  .contact-section,.contact-copy,footer{min-width:0}
+  .menu-card li>div{flex-wrap:wrap}
+  .schedule-head,.schedule-row{min-width:0}
+  .schedule-row span,.schedule-row time{overflow-wrap:anywhere}
+  .catering-section{grid-template-columns:minmax(0,1fr)}
+  .catering-poster{max-width:min(100%,520px);box-shadow:8px 8px 0 var(--navy)}
+  .seasoning-section{grid-template-columns:minmax(0,1fr)}
+  .seasoning-image-wrap{max-width:min(100%,360px)}
+  .service-area{padding:clamp(1.25rem,5vw,2rem)}
+  .service-area ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gallery-grid{grid-template-columns:minmax(0,1fr);padding-inline:1.25rem}
+  .gallery-grid figure{min-width:0}
+  .gallery-one,.gallery-three{transform:none}
+  .gallery-three{grid-column:auto}
+  .contact-section{padding-inline:clamp(1.25rem,5vw,2rem)}
+  footer{grid-template-columns:repeat(2,minmax(0,1fr));padding-inline:clamp(1.25rem,5vw,2rem)}
+  .footer-contact,.footer-links{overflow-wrap:anywhere}
+}
+@media(max-width:620px){
+  .site-header{min-height:68px;padding-inline:1rem}
+  .mini-mark{width:48px;height:48px}
+  .mini-brand{font-size:.8rem}
+  .mobile-nav summary{padding:.65rem .75rem}
+  .hero{padding:6.5rem 1.25rem 4.5rem}
+  .hero .eyebrow{font-size:.58rem;letter-spacing:.15em}
+  .brand-seal{width:min(300px,70vw)}
+  .hero h1{font-size:clamp(2rem,8.5vw,2.8rem)}
+  .hero-actions{flex-direction:column;gap:.5rem}
+  .hero-actions .button,.hero-actions .text-link{max-width:100%;text-align:center}
+  .section,.schedule-section{padding-inline:1.25rem}
+  .section-heading{margin-bottom:2.25rem}
+  .section-heading h2,.story-copy h2,.catering-copy h2,.contact-section h2,.gallery-title-wrap h2{font-size:clamp(2.15rem,9vw,3.2rem);overflow-wrap:anywhere}
+  .menu-card{padding:2rem 1.25rem}
+  .menu-card li>div{align-items:baseline;gap:.4rem .75rem}
+  .menu-card li strong{overflow-wrap:anywhere}
+  .story-image{min-height:390px}
+  .story-frame{width:min(70%,280px)}
+  .story-stamp{width:96px;height:96px;right:5%;bottom:6%;font-size:.52rem}
+  .story-copy{padding:3.25rem 1.25rem}
+  .check-list{grid-template-columns:minmax(0,1fr);padding-bottom:1.5rem}
+  .catering-poster{padding:2.5rem 1.25rem}
+  .schedule-head{align-items:flex-start;gap:.75rem;flex-wrap:wrap;padding:1rem}
+  .schedule-head small{text-align:left}
+  .schedule-row{padding:1rem}
+  .service-area{margin-top:1.5rem;padding:1.25rem}
+  .service-area ul{gap:.5rem}
+  .service-area li{padding:.65rem .25rem;font-size:.56rem;letter-spacing:.06em;overflow-wrap:anywhere}
+  .gallery-title-wrap{padding-inline:1.25rem}
+  .gallery-art{min-height:270px}
+  .contact-section{padding:4.5rem 1.25rem}
+  footer{padding:3rem 1.25rem 1.25rem;gap:1.5rem 1rem}
+  .footer-brand span{font-size:1.5rem}
+  .footer-bottom{font-size:.5rem}
+}
+@media(max-width:380px){
+  .mini-mark{width:42px;height:42px}
+  .mini-brand{gap:.4rem;font-size:.72rem;letter-spacing:.05em}
+  .mobile-nav{font-size:.62rem}
+  .brand-seal{width:min(260px,68vw)}
+  .hero{padding-inline:1rem}
+  .service-area ul{grid-template-columns:1fr}
+  footer{grid-template-columns:1fr}
+  .footer-brand{grid-column:auto}
+}

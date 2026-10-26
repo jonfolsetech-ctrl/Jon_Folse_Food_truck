@@ -56,9 +56,9 @@ export default function Home() {
     <a className="skip-link" href="#main-content">Skip to content</a>
     <header className="site-header">
       <a className="mini-brand" href="#top" aria-label="Jon Folse Food Truck home"><span className="mini-mark"><Image src="/jonfolsefoodtrucklogo.png" alt="" width={72} height={72} /></span><span>Jon Folse<small>Food Truck</small></span></a>
-      <nav className="desktop-nav" aria-label="Primary navigation"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#catering">Catering</a><a href="#find-us">Find us</a></nav>
+      <nav className="desktop-nav" aria-label="Primary navigation"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#catering">Catering</a><a href="#seasoning">Seasoning</a><a href="#find-us">Find us</a></nav>
       <a className="button button-small" href="#contact">Book the truck</a>
-      <details className="mobile-nav"><summary aria-label="Open navigation">Menu</summary><nav aria-label="Mobile navigation"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#catering">Catering</a><a href="#find-us">Find us</a><a href="#contact">Book the truck</a></nav></details>
+      <details className="mobile-nav"><summary aria-label="Open navigation">Menu</summary><nav aria-label="Mobile navigation"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#catering">Catering</a><a href="#seasoning">Seasoning</a><a href="#find-us">Find us</a><a href="#contact">Book the truck</a></nav></details>
     </header>
 
     <section className="hero" id="top">

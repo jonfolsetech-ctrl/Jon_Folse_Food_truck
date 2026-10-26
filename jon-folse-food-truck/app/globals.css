@@ -19,3 +19,19 @@
 .mini-mark{width:72px;height:72px;flex:0 0 auto;border:0;border-radius:0;background:transparent}
 .mini-mark img{object-fit:contain}
 @media(max-width:620px){.mini-mark{width:56px;height:56px}}
+
+/* Just Right Cajun Seasoning launch teaser */
+.seasoning-section{display:grid;grid-template-columns:minmax(280px,.8fr) 1fr;align-items:center;gap:clamp(2.5rem,7vw,7rem);padding:clamp(4.5rem,8vw,8rem) clamp(1.25rem,8vw,8rem);background:linear-gradient(130deg,#071b2b 0%,#0d2940 62%,#102b40 100%);color:var(--cream);position:relative;overflow:hidden}
+.seasoning-section:before{content:"";position:absolute;inset:1.2rem;border:1px solid #c69a4b40;pointer-events:none}
+.seasoning-image-wrap{position:relative;z-index:1;max-width:450px;margin:auto;width:100%;padding:1rem;background:#fffaf00b;border:1px solid #c69a4b77;box-shadow:0 24px 65px #0005}
+.seasoning-product-image{display:block;width:100%;height:auto;object-fit:contain;max-height:650px}
+.seasoning-image-caption{display:block;text-align:center;padding:.85rem .3rem .25rem;color:var(--gold2);font:700 .58rem Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase}
+.seasoning-copy{position:relative;z-index:1;max-width:650px}
+.seasoning-coming{display:inline-block;margin:.25rem 0 1rem;padding:.55rem .8rem;border:1px solid var(--gold);color:var(--gold2);font:700 .65rem Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.seasoning-copy h2{margin:.2rem 0 1.2rem;font-size:clamp(2.8rem,6vw,5.8rem);font-weight:400;line-height:.91;letter-spacing:-.045em}
+.seasoning-copy h2 em{color:var(--gold2);font-style:italic}
+.seasoning-copy .flourish{justify-content:flex-start;margin:1.2rem 0}
+.seasoning-copy>p:not(.eyebrow):not(.seasoning-coming){max-width:580px;color:#d9d1c3;line-height:1.8}
+.seasoning-tagline{font-size:clamp(1.3rem,2.5vw,2rem);font-style:italic;color:var(--gold2)!important;line-height:1.35!important}
+.seasoning-badge{display:inline-block;margin-top:1rem;padding:.8rem 1rem;border-left:2px solid var(--gold);background:#ffffff08;color:var(--cream);font:700 .6rem Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:760px){.seasoning-section{grid-template-columns:1fr;gap:2.5rem;padding:4.5rem 1.5rem}.seasoning-image-wrap{max-width:360px}.seasoning-copy{text-align:center}.seasoning-copy .flourish{justify-content:center}.seasoning-copy h2{font-size:clamp(2.8rem,13vw,4.5rem)}.seasoning-copy>p:not(.eyebrow):not(.seasoning-coming){margin-left:auto;margin-right:auto}}
